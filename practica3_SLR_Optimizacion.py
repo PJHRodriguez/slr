@@ -2,10 +2,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-# Programa 1 - Optimización con Descenso del Gradiente
 x1 = np.random.uniform(-1, 1) 
 x2 = np.random.uniform(-1, 1)
-f_values = []  # Lista para almacenar los valores de f(x1, x2)
+f_values = []  
 
 b = 0
 w = 0 
@@ -19,7 +18,7 @@ for i in range(100):
     x2 -= rate * gradiente_x2
 
     iteracion_f = 10 - np.exp(-(x1**2 + 3 * x2 ** 2))
-    f_values.append(iteracion_f)  # Almacenar los valores de f(x1, x2)
+    f_values.append(iteracion_f)  
 
 print("Valor mínimo:", iteracion_f)   
 
